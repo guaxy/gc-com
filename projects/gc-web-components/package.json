@@ -1,0 +1,28 @@
+{
+  "name": "gc-web-components",
+  "version": "0.0.3",
+  "description": "gc components",
+  "keywords": [
+    "gc",
+    "angular",
+    "components"
+  ],
+  "homepage": "https://github.com/guaxy/gc-com#readme",
+  "bugs": {
+    "url": "https://github.com/guaxy/gc-com#issues",
+    "email": "guaxysoft@gmail.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "pancho or",
+    "email": "guaxysoft@gmail.com",
+    "url": "https://github.com/guaxy"
+  },
+  "peerDependencies": {
+    "@angular/common": "^9.1.13",
+    "@angular/core": "^9.1.13"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  }
+}

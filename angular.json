@@ -119,6 +119,46 @@
           }
         }
       }
+    },
+    "gc-web-components": {
+      "projectType": "library",
+      "root": "projects/gc-web-components",
+      "sourceRoot": "projects/gc-web-components/src",
+      "prefix": "gcwc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/gc-web-components/tsconfig.lib.json",
+            "project": "projects/gc-web-components/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/gc-web-components/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/gc-web-components/src/test.ts",
+            "tsConfig": "projects/gc-web-components/tsconfig.spec.json",
+            "karmaConfig": "projects/gc-web-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/gc-web-components/tsconfig.lib.json",
+              "projects/gc-web-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "exec-ng-library"
 }
